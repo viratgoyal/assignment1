@@ -1,0 +1,5 @@
+all:hello
+hello:main.o
+	g++ main.o -o main
+main.o:main.cpp linkedlist.h
+	g++ -c main.cpp
